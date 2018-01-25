@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <progbase.h>
+#include <pbconsole.h>
+#include <math.h>
+#include <string.h>
+#include <limits.h>
+#include <ctype.h>
+void task_1(void);
+void task_2(void);
+void task_3(void);
+void task_4(void);
+void menu(void);

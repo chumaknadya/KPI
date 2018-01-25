@@ -1,0 +1,22 @@
+#include <math.h>
+#include <stdio.h>
+
+int main() 
+{
+	double x = 0;
+	double y = 0;
+	double z = 0;
+
+	puts ( "Enter double x:" );
+	x = getDouble();
+	printf ( "Your: x = %f\n" , x );
+	 
+	puts ( "Enter double y:" );
+	y = getDouble(); 
+	printf ( "Your : y = %f\n" , y );
+	
+	puts ( "Enter double z:" );
+	z = getDouble ();
+	printf ( "Your: z = %f\n" , z );
+		return 0;
+}

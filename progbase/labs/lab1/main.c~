@@ -1,0 +1,57 @@
+#include <math.h>
+#include <stdio.h>
+#include <progbase.h>
+
+int main(void) 
+{
+	double x = 0;
+	double y = 0;
+	double z = 0;
+	double a1 = 0;
+	double a2 = 0;
+	double a3 = 0;
+	double a = 0;
+	
+	puts ( "Enter double x:" );
+	x = getDouble();
+	printf ( "Your: x = %f\n" , x );
+	 
+	puts ( "Enter double y:" );
+	y = getDouble(); 
+	printf ( "Your : y = %f\n" , y );
+	
+	puts ( "Enter double z:" );
+	z = getDouble ();
+	printf ( "Your: z = %f\n" , z );
+	
+
+
+
+	/*if ( !fabs(x+y)) {
+	 printf (" Can`t be computed a0");
+	} else {
+		a2 = y / (10 *fabs(x + y));
+		printf ( "a0 = %f\n" , a2 );
+	} */
+		if ( !(x - y) && !z) {
+	 printf (" Can`t be computed a1");
+	} else {
+		a1 = pow(x, y+1) / pow(x-y, 1/z);
+		printf ( "a1 = %f\n" , a1 );
+	}
+
+	/*if ( !(z + fabs(x-y))) {
+	 printf (" Can`t be computed a2");
+	} else {
+		a3 = pow(2 + sin(y),cos(x)/(z + fabs(x-y)));
+		printf ( "a2 = %f\n" , a2 );
+	} */
+	
+	
+  
+  
+		printf("\n");
+	
+
+	return 0;
+}

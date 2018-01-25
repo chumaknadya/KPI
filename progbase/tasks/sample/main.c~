@@ -1,0 +1,46 @@
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
+#include <limits.h>
+#include <progbase.h>
+#include <pbconsole.h>
+/*
+	Розбити строку на підстроки через символи пробілу, коми і крапки.
+	Вивести підстроки, кожна з нового рядка.
+*/
+int main(void) {
+	char str[100] = "hello, world.This,,is,.sparta! banana orange";
+	char word[100];
+	int wordLen = 0;
+	int j = 0;
+	int wordStart = 0;
+	int i = 0;
+	puts(str);
+	puts("=====");
+	char ch = 0;
+	puts("Enter some char:");
+ ch = conGetChar();
+
+/*	for (i = 0; i < strlen(str); i++) {
+    	 
+    	if (str[i] == ch ) {
+        	wordLen = i - wordStart;
+        	if (wordLen > 0) {
+              strncpy(word, str + wordStart, wordLen); 
+            	for (j = wordStart; j < i; j++) {
+                	word[j - wordStart] = str[j];
+            	}
+            	word[wordLen] = '\0';
+            	puts(word);
+        	}
+        	wordStart += wordLen + 1;
+        	strcpy(word, str + wordStart, i)
+    	}
+	}*/
+	return 0;
+}
+
+

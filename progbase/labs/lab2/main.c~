@@ -1,0 +1,300 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <progbase.h>
+#include <pbconsole.h>
+#include <math.h>
+
+
+int main( )
+{
+
+
+	int Array[10] = { 0 };
+	int length = 10;
+	double arr3[10];
+	int i = 0;
+	int j = 0;
+	int n = 0;
+	int imin = 0;
+	int imax = 0;
+	int Index = 0;
+	double Sum1 = 0;
+	double Sum2 = 0;
+	int temp = 0;
+	long Sum = 0;
+	int count = 0;
+	long Product = 1;
+	int min = 100;
+	int max = -100;
+	double dmin = 40.0;
+	double dmax = -20.0;
+	int maxNumber = -100;
+	double arr1[10] = { 0 };
+	double arr2[10] = { 0 };
+	srand(time(0));
+	
+	printf("Task1\n");
+	puts ("Введіть цілочисельне n:");
+	n = getInt();
+
+	
+	switch (n){
+		case 1: {
+			for (i = 0; i < length; i++ ) {
+				Array[i]= rand()%200 - 100;
+				printf("\t%i",Array[i]);
+			}
+			printf("\n");
+		}
+		break;
+		case 2: {
+			for (i = 0;i < length; i++) {
+				Array[i]= rand()%200 - 100;
+				Array[i] = 0;
+				printf("\t%i",Array[i]);
+			}
+			printf("\n");
+		}
+		break;
+		case 3: {
+			for(i = 0; i < length; i++) {
+				Array[i]= rand()%200 - 100;
+				printf("\t%i",Array[i]);
+				if (Array[i] < min) {
+					min = Array[i];
+					imin = i;
+				}
+			}
+			printf("\n");
+			printf("A[%i] = %i\n",imin , min);
+		}
+		break;
+		case 4: {
+			for(i = 0;i < length; i++) {
+				Array[i]= rand()%200 - 100;
+				printf("\t%i",Array[i]);
+				Sum += Array[i];
+			}
+			printf("\n");
+			printf("Sum: %ld\n", Sum);
+		}
+		break;
+		case 5: {
+			for(i = 0;i < length; i++) {
+				Array[i]= rand()%200 - 100;
+				printf("\t%i",Array[i]);
+				
+				if (Array[i] < 0) {
+					
+					Product *= Array[i];
+				}
+			}
+			
+			printf("\n");
+			if (Product == 1){
+				printf("Array doesn`t consist of negative elements\n");
+			}
+			else {
+				printf("Product: %ld\n", Product);
+			}
+		}
+		break;
+		case 6: {
+			for (i = 0; i < length; i++ ) {
+				Array[i]= rand()%8;
+				printf("\t%i",Array[i]);
+			}
+			printf("\n");
+			for (i = 0; i < length; i++) {
+				count = 0;
+				for (j = i + 1; j < length; j ++) {
+					if (Array[j] == Array[i]) {
+					count ++;
+						
+					}
+					if (  count > maxNumber) {
+							maxNumber = Array[i];
+							Index = i;
+						}
+				}
+				
+				
+			}
+			if (Index > -1) {
+				printf(" %d\n",maxNumber);
+			}
+			else {
+				printf("No repeating elements\n");
+			}
+		}
+		break;
+		case 7: {
+			printf("Array\n");
+			for(i = 0; i < length; i++) {
+				Array[i]= rand()%200 - 100;
+				printf("\t%i",Array[i]);
+			}
+			printf("\n");
+			printf("Modified array\n");
+			for (i = 0 ; i < length; i ++) {
+				if (Array[i] < min) {
+					min = Array[i];
+					imin = i;
+				}
+				if (Array[i] > max) {
+					max = Array[i];
+					imax = i;
+				}
+			}
+				temp = Array[imin];
+				Array[imin]=Array[imax];
+				Array[imax]=temp;
+				for (i = 0; i < length; i ++){
+					printf("\t%i",Array[i]);
+			}
+			printf("\n");
+		}
+		
+		
+		break;
+		case 8: {
+			printf("Array:\n");
+			for (i = 0;i < length; i++) {
+				Array[i]= rand()%200 - 100;
+				printf("\t%i",Array[i]);
+			}
+			printf("\n");
+			printf("Array multiplied by the number n:\n");
+			for (i = 0;i < length; i++) {
+				Array[i] = n * Array[i];
+				printf("\t%i",Array[i]);
+			}
+			printf("\n");
+		break;
+		}
+		
+	}
+	
+	
+	printf("Task2\n");
+	puts ("Введіть цілочисельне n:");
+	n = getDouble();
+
+	switch (n) {
+		case 1: {
+			for (i = 0;i < length; i++) {
+				arr1[i] = (rand()%80)/2.0-40/2.0;
+				printf("\t%0.1f",arr1[i]);
+			}
+			printf("\n");
+			for (i = 0;i < length; i++) {
+				arr2[i] = (rand()%80)/2.0-40/2.0;
+				printf("\t%0.1f",arr2[i]);
+			}
+			printf("\n");
+		break;
+		}
+		case 2: {
+			for (i = 0;i < length; i++) {
+				arr1[i]= (rand()%80)/2.0 - 40/2.0;
+				arr1[i] = 0;
+				printf("\t%0.1f",arr1[i]);
+
+			}
+			printf("\n");
+			for (i = 0;i < length; i++) {
+				arr2[i] = (rand()%80)/2.0-40/2.0;
+				arr2[i] = 0;
+				printf("\t%0.1f",arr2[i]);
+			}
+			printf("\n");
+		}
+		break;
+		case 3: {
+			for (i = 0;i < length; i++) {
+				arr1[i] = (rand()%80)/2.0-40/2.0;
+				printf("\t%0.1f",arr1[i]);
+			}
+			printf("\n");
+			for (i = 0;i < length; i++) {
+				arr2[i] = (rand()%80)/2.0-40/2.0;
+				printf("\t%0.1f",arr2[i]);
+			}
+			printf("\n");
+			for (i = 0;i < length; i++) {
+				arr3[i] = arr1[i]- arr2[i];
+				printf("\t%0.1f",arr3[i]);
+			}
+			printf("\n");
+		
+		}
+		break;
+		case 4: {
+			for(i = 0;i < length; i++) {
+				arr1[i] = (rand()%80)/2.0-40/2.0;
+				printf("\t%0.1f",arr1[i]);
+				Sum1 += arr1[i];
+			}
+			printf("\n");
+			printf("Sum1: %0.1f\n", Sum1);
+		
+			for(i = 0;i < length; i++) {
+				arr2[i] = (rand()%80)/2.0-40/2.0;
+				printf("\t%0.1f",arr2[i]);
+				Sum2 += arr2[i];
+			}
+			printf("\n");
+			printf("Sum2: %0.1f\n", Sum2);
+			if (Sum1 > Sum2) {
+				printf("1 - number of array1\n");
+			} else if (Sum2 > Sum1) {
+				printf("2 - number of array2\n");
+			}
+			else {
+				printf("arrays are equal\n");
+			}
+		}
+		break;
+		case 5: {
+			for (i = 0;i < length; i++) {
+				arr1[i] = (rand()%80)/2.0-40/2.0;
+				printf("\t%0.1f",arr1[i]);
+			}
+			printf("\n");
+			for (i = 0;i < length; i++) {
+				arr2[i] = (rand()%80)/2.0-40/2.0;
+				printf("\t%0.1f",arr2[i]);
+			}
+			printf("\n");
+			for (i = 0;i < length;i ++) {
+				if (arr1[i] < dmin) {
+					dmin = arr1[i];
+					imin = i;
+				}
+				if (arr2[i] > dmax) {
+					dmax = arr2[i];
+					imax = i;
+				}
+			}
+			printf("%0.1f\n",dmin);
+			printf("%0.1f\n",dmax);
+			temp = arr1[imin];
+			arr1[imin] = arr2[imax];
+			arr2[imax] = temp;
+			for (i = 0; i < length; i ++) {
+				printf("\t%0.1f",arr1[i]);
+			}
+			printf("\n");
+			for (i = 0; i < length; i ++) {
+				printf("\t%0.1f",arr2[i]);
+			}
+			printf("\n");
+			break;
+		}
+	}
+	
+
+	return 0;
+}
+
