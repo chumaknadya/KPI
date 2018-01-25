@@ -1,0 +1,8 @@
+/home/ziom/progbase2/labs/lab5/CMakeFiles/install.dir
+/home/ziom/progbase2/labs/lab5/CMakeFiles/list_install_components.dir
+/home/ziom/progbase2/labs/lab5/CMakeFiles/rebuild_cache.dir
+/home/ziom/progbase2/labs/lab5/CMakeFiles/ModuleForLab5.dir
+/home/ziom/progbase2/labs/lab5/CMakeFiles/edit_cache.dir
+/home/ziom/progbase2/labs/lab5/CMakeFiles/a.out.dir
+/home/ziom/progbase2/labs/lab5/CMakeFiles/install/local.dir
+/home/ziom/progbase2/labs/lab5/CMakeFiles/install/strip.dir

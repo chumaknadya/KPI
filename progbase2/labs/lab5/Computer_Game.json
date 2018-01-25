@@ -1,0 +1,28 @@
+[{
+	"year": 1999,
+	"fullname": "game1",
+	"genre": "genre1",
+	"rating": 34.5,
+	"classification": {
+		"platform": "Android",
+		"numbers_of_player": "one"
+	}
+}, {
+	"year": 2003,
+	"fullname": "game2",
+	"genre": "genre2",
+	"rating": 13.2,
+	"classification": {
+		"platform": "Windows",
+		"numbers_of_player": "two"
+	}
+}, {
+	"year": 2016,
+	"fullname": "game3",
+	"genre": "genre3",
+	"rating": 14.3,
+	"classification": {
+		"platform": "Mac",
+		"numbers_of_player": "one"
+	}
+}]

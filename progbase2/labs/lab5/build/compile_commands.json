@@ -1,0 +1,57 @@
+[
+{
+  "directory": "/home/ziom/progbase2/labs/lab5/build",
+  "command": "/usr/bin/cc   -I/home/ziom/progbase2/labs/lab5/include -I/usr/include/libxml2  -g   -o CMakeFiles/ModuleForLab5.dir/src/storage.c.o   -c /home/ziom/progbase2/labs/lab5/src/storage.c",
+  "file": "/home/ziom/progbase2/labs/lab5/src/storage.c"
+},
+{
+  "directory": "/home/ziom/progbase2/labs/lab5/build",
+  "command": "/usr/bin/cc   -I/home/ziom/progbase2/labs/lab5/include -I/usr/include/libxml2  -g   -o CMakeFiles/ModuleForLab5.dir/src/menu.c.o   -c /home/ziom/progbase2/labs/lab5/src/menu.c",
+  "file": "/home/ziom/progbase2/labs/lab5/src/menu.c"
+},
+{
+  "directory": "/home/ziom/progbase2/labs/lab5/build",
+  "command": "/usr/bin/cc   -I/home/ziom/progbase2/labs/lab5/include -I/usr/include/libxml2  -g   -o CMakeFiles/ModuleForLab5.dir/src/cui.c.o   -c /home/ziom/progbase2/labs/lab5/src/cui.c",
+  "file": "/home/ziom/progbase2/labs/lab5/src/cui.c"
+},
+{
+  "directory": "/home/ziom/progbase2/labs/lab5/build",
+  "command": "/usr/bin/cc   -I/home/ziom/progbase2/labs/lab5/include -I/usr/include/libxml2  -g   -o CMakeFiles/ModuleForLab5.dir/src/structure.c.o   -c /home/ziom/progbase2/labs/lab5/src/structure.c",
+  "file": "/home/ziom/progbase2/labs/lab5/src/structure.c"
+},
+{
+  "directory": "/home/ziom/progbase2/labs/lab5/build",
+  "command": "/usr/bin/cc   -I/home/ziom/progbase2/labs/lab5/include -I/usr/include/libxml2  -g   -o CMakeFiles/ModuleForLab5.dir/src/list.c.o   -c /home/ziom/progbase2/labs/lab5/src/list.c",
+  "file": "/home/ziom/progbase2/labs/lab5/src/list.c"
+},
+{
+  "directory": "/home/ziom/progbase2/labs/lab5/build",
+  "command": "/usr/bin/cc   -I/home/ziom/progbase2/labs/lab5/include -I/usr/include/libxml2  -g   -o CMakeFiles/a.out.dir/main.c.o   -c /home/ziom/progbase2/labs/lab5/main.c",
+  "file": "/home/ziom/progbase2/labs/lab5/main.c"
+},
+{
+  "directory": "/home/ziom/progbase2/labs/lab5/build",
+  "command": "/usr/bin/cc   -I/home/ziom/progbase2/labs/lab5/include -I/usr/include/libxml2  -g   -o CMakeFiles/a.out.dir/src/storage.c.o   -c /home/ziom/progbase2/labs/lab5/src/storage.c",
+  "file": "/home/ziom/progbase2/labs/lab5/src/storage.c"
+},
+{
+  "directory": "/home/ziom/progbase2/labs/lab5/build",
+  "command": "/usr/bin/cc   -I/home/ziom/progbase2/labs/lab5/include -I/usr/include/libxml2  -g   -o CMakeFiles/a.out.dir/src/menu.c.o   -c /home/ziom/progbase2/labs/lab5/src/menu.c",
+  "file": "/home/ziom/progbase2/labs/lab5/src/menu.c"
+},
+{
+  "directory": "/home/ziom/progbase2/labs/lab5/build",
+  "command": "/usr/bin/cc   -I/home/ziom/progbase2/labs/lab5/include -I/usr/include/libxml2  -g   -o CMakeFiles/a.out.dir/src/cui.c.o   -c /home/ziom/progbase2/labs/lab5/src/cui.c",
+  "file": "/home/ziom/progbase2/labs/lab5/src/cui.c"
+},
+{
+  "directory": "/home/ziom/progbase2/labs/lab5/build",
+  "command": "/usr/bin/cc   -I/home/ziom/progbase2/labs/lab5/include -I/usr/include/libxml2  -g   -o CMakeFiles/a.out.dir/src/structure.c.o   -c /home/ziom/progbase2/labs/lab5/src/structure.c",
+  "file": "/home/ziom/progbase2/labs/lab5/src/structure.c"
+},
+{
+  "directory": "/home/ziom/progbase2/labs/lab5/build",
+  "command": "/usr/bin/cc   -I/home/ziom/progbase2/labs/lab5/include -I/usr/include/libxml2  -g   -o CMakeFiles/a.out.dir/src/list.c.o   -c /home/ziom/progbase2/labs/lab5/src/list.c",
+  "file": "/home/ziom/progbase2/labs/lab5/src/list.c"
+}
+]

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<computer_games>
+  <computer_game>
+    <fullname>game1</fullname>
+    <genre>genre1</genre>
+    <year>1999</year>
+    <rating>34.500000</rating>
+    <classification>
+      <platform>Android</platform>
+      <numbers_of_player>one</numbers_of_player>
+    </classification>
+  </computer_game>
+  <computer_game>
+    <fullname>game3</fullname>
+    <genre>genre3</genre>
+    <year>2016</year>
+    <rating>14.300000</rating>
+    <classification>
+      <platform>Mac</platform>
+      <numbers_of_player>one</numbers_of_player>
+    </classification>
+  </computer_game>
+</computer_games>
