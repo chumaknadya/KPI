@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Users</title>
+  <meta name="description" content="list of users">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link type="text/css"  href="../public/stylesheets/formstylesheet.css"  rel="stylesheet"/>
+  <link type="text/css"  href="../public/stylesheets/style.css"  rel="stylesheet"/>
+</head>
+<body> 
+   <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+      <div class="navbar-header">
+            <a class="navbar-brand" href="/">N.Ch</a>
+      </div>
+      <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="/animals">Animals</a></li>         
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+            <% if (user) { %>
+            <li><a><%= user.username %></a></li>
+            <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+            <% } else { %>
+            <li><a href="/register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <% } %>
+      </ul>
+      </div>
+  </nav>
+  <h6>users(<%=users.length%>)</h6>
+  <% if(users.length==0) { %>
+       <p>Not Found</p>
+  <%} else {%>
+    <div class="container">
+        <table class="table">
+            <thead class="thead-inverse">
+                <tr>
+                    <th>#</th>
+                    <th>ID</th>
+                    <th>Username</th>
+                </tr>
+            </thead>
+            <tbody>
+                <%let i = 1 %>
+                <% for (let u of users) { %>
+                    <tr>
+                    <th scope="row"><%=i%></th>
+                    <td><%= u.user_id%></td>
+                    <td><%= u.username %></td>
+                    <% i++; %>
+                    </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </div>
+<%}%>
+   <!-- <div class = "users">
+        <ul class="list">
+            <% for (let u of users) { %>
+                <li><%= u.user_id%>   | <%= u.username %></li>
+            <% } %>
+        </ul>
+    </div>-->
+</body>
+</html>
