@@ -1,0 +1,3 @@
+/home/ziom/progbase2/tasks/xml1/build/CMakeFiles/edit_cache.dir
+/home/ziom/progbase2/tasks/xml1/build/CMakeFiles/rebuild_cache.dir
+/home/ziom/progbase2/tasks/xml1/build/CMakeFiles/proj.dir

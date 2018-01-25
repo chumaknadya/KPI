@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/ziom/progbase2/tasks/xml1/build",
+  "command": "/usr/bin/cc   -I/home/ziom/progbase2/tasks/xml1/include -I/usr/include/libxml2  -g   -o CMakeFiles/proj.dir/main.c.o   -c /home/ziom/progbase2/tasks/xml1/main.c",
+  "file": "/home/ziom/progbase2/tasks/xml1/main.c"
+}
+]
