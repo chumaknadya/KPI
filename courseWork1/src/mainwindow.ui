@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>840</width>
+    <height>648</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>840</width>
+    <height>648</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>840</width>
+    <height>648</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Grand Hotel</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 57 italic 28pt &quot;URW Chancery L&quot;;</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QPushButton" name="signInpushButton">
+    <property name="geometry">
+     <rect>
+      <x>670</x>
+      <y>30</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+font: 57 italic 22pt &quot;URW Chancery L&quot;;
+border: 1px solid &quot;+getRGBhexColor(palyellow.shadow().color())+&quot;; border-radius: 5px;
+}
+
+QPushButton:hover{
+border-width: 0px;
+background-color:rgb(157, 220, 146);
+border-radius: 20%;
+}</string>
+    </property>
+    <property name="text">
+     <string>Log In</string>
+    </property>
+    <property name="icon">
+     <iconset resource="doc.qrc">
+      <normaloff>:/doc/login.png</normaloff>:/doc/login.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>45</width>
+      <height>45</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="reviewspushButton">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>111</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+font: 75 28pt \&quot;Serif\&quot;; 
+border: 1px solid &quot;+getRGBhexColor(palyellow.shadow().color())+&quot;; border-radius: 5px;
+}
+
+QPushButton:hover{
+border-width: 0px;
+background-color:rgb(157, 220, 146);
+border-radius: 20%;
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="doc.qrc">
+      <normaloff>:/doc/review-icon-3.png</normaloff>:/doc/review-icon-3.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>110</width>
+      <height>60</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="welcomelabel">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>60</y>
+      <width>191</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 57 italic 42pt &quot;URW Chancery L&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Welcome</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>811</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="doc.qrc">:/doc/Grand-13.jpg</pixmap>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="doc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

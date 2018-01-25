@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Reservation</class>
+ <widget class="QWidget" name="Reservation">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1143</width>
+    <height>716</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1143</width>
+    <height>716</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1143</width>
+    <height>716</height>
+   </size>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::DefaultContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Reservation</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>290</y>
+     <width>1081</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 57 italic 16pt &quot;URW Chancery L&quot;;
+background-image: url(:/doc/aesthetic-background-gradient-green-Favim.com-2877559.jpg); 
+selection-background-color: rgb(127, 192, 217);</string>
+   </property>
+   <property name="defaultDropAction">
+    <enum>Qt::IgnoreAction</enum>
+   </property>
+   <column>
+    <property name="text">
+     <string>Id</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Hotel Room</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Type of Room</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Convenience</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Cost</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Service Provider</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Client</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Length of Stay</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Payment Method</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Way to Order</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>101</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>30</y>
+     <width>511</width>
+     <height>201</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="doc.qrc">:/doc/reserved-512.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>240</y>
+     <width>169</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+   background-color: white;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(46, 52, 54);
+
+    min-width: 9em;
+    padding: 6px;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>880</x>
+     <y>240</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+font: 75 28pt \&quot;Serif\&quot;; 
+border: 1px solid &quot;+getRGBhexColor(palyellow.shadow().color())+&quot;; border-radius: 5px;
+
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="doc.qrc">
+     <normaloff>:/doc/search-loop-512.png</normaloff>:/doc/search-loop-512.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="doc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogReservation</class>
+ <widget class="QDialog" name="DialogReservation">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>567</width>
+    <height>570</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>567</width>
+    <height>570</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>567</width>
+    <height>570</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Reservation</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>480</y>
+     <width>81</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 57 italic 14pt &quot;URW Chancery L&quot;;
+background-color:rgb(245, 248, 144);
+</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>20</y>
+     <width>151</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="doc.qrc">:/doc/990438.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>60</y>
+     <width>221</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 57 italic 40pt &quot;URW Chancery L&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Reservation</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>200</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 56 italic 18pt &quot;URW Chancery L&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Cost</string>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>200</y>
+     <width>74</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QSpinBox
+{
+    border-width: 2px;
+    border-style: solid;
+    border-color : black;
+    border-radius: 20%;
+    background-color:white;
+}
+
+</string>
+   </property>
+   <property name="maximum">
+    <number>10000</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>199</y>
+     <width>57</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 57 italic 17pt &quot;URW Chancery L&quot;;</string>
+   </property>
+   <property name="text">
+    <string>dollars</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>230</y>
+     <width>336</width>
+     <height>203</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QLabel" name="label_7">
+        <property name="styleSheet">
+         <string notr="true">font: 57 italic 18pt &quot;URW Chancery L&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Length of stay</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="styleSheet">
+         <string notr="true">
+   background-color: white;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(46, 52, 54);
+
+    min-width: 10em;
+    padding: 6px;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="styleSheet">
+         <string notr="true">font: 57 italic 18pt &quot;URW Chancery L&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Client</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="clientlineEdit">
+        <property name="styleSheet">
+         <string notr="true">
+   background-color: white;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(46, 52, 54);
+
+    min-width: 10em;
+    padding: 6px;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QLabel" name="label_8">
+        <property name="styleSheet">
+         <string notr="true">font: 57 italic 18pt &quot;URW Chancery L&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Payment method </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="paymentmethodcomboBox">
+        <property name="styleSheet">
+         <string notr="true"> background-color:white;
+    border-width: 2px;
+    border-style: solid;
+    border-color : black;
+    border-radius: 20%;
+
+
+</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="3" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <item>
+       <widget class="QLabel" name="label_9">
+        <property name="styleSheet">
+         <string notr="true">font: 57 italic 18pt &quot;URW Chancery L&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Way to order</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="waytoordercomboBox">
+        <property name="styleSheet">
+         <string notr="true"> background-color:white;
+    border-width: 2px;
+    border-style: solid;
+    border-color : black;
+    border-radius: 20%;
+
+
+</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="4" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="styleSheet">
+         <string notr="true">font: 57 italic 18pt &quot;URW Chancery L&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Service Provider</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="servicelineEdit">
+        <property name="styleSheet">
+         <string notr="true">
+   background-color: white;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(46, 52, 54);
+
+    min-width: 10em;
+    padding: 6px;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <zorder>buttonBox</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_10</zorder>
+ </widget>
+ <resources>
+  <include location="doc.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>DialogReservation</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>DialogReservation</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

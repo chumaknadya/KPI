@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PeriodOfStaying</class>
+ <widget class="QWidget" name="PeriodOfStaying">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>581</width>
+    <height>622</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>210</y>
+     <width>501</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 57 italic 16pt &quot;URW Chancery L&quot;;
+background-image: url(:/doc/aesthetic-background-gradient-green-Favim.com-2877559.jpg); 
+selection-background-color: rgb(127, 192, 217);</string>
+   </property>
+   <column>
+    <property name="text">
+     <string>id</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>number</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>data of staying</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>10</y>
+     <width>67</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>30</y>
+     <width>301</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 57 italic 40pt &quot;URW Chancery L&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Entrance time </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>0</y>
+     <width>141</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="doc.qrc">:/doc/990421.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>150</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+font: 75 28pt \&quot;Serif\&quot;; 
+border: 1px solid &quot;+getRGBhexColor(palyellow.shadow().color())+&quot;; border-radius: 5px;
+
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset resource="doc.qrc">
+     <normaloff>:/doc/search-loop-512.png</normaloff>:/doc/search-loop-512.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>30</width>
+     <height>30</height>
+    </size>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>150</y>
+     <width>118</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">
+   background-color: white;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 6px;
+    border-color: rgb(192, 237, 238);
+
+    min-width: 6em;
+    padding: 6px;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources>
+  <include location="doc.qrc"/>
+ </resources>
+ <connections/>
+</ui>

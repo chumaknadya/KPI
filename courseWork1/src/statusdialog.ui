@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StatusDialog</class>
+ <widget class="QDialog" name="StatusDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>491</width>
+    <height>417</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>491</width>
+    <height>417</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>491</width>
+    <height>417</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Housemaid</string>
+  </property>
+  <widget class="QDialogButtonBox" name="buttonBox">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>370</y>
+     <width>161</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:rgb(245, 248, 144);
+font: 57 italic 13pt &quot;URW Chancery L&quot;;</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="standardButtons">
+    <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>20</y>
+     <width>231</width>
+     <height>271</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="doc.qrc">:/doc/990292.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>100</y>
+     <width>211</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">font: 57 italic 19pt &quot;URW Chancery L&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Data</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDateTimeEdit" name="dateTimeEdit">
+        <property name="styleSheet">
+         <string notr="true">/*background: none;
+
+        border: 1px solid gray;
+        border-radius: 3px;
+
+        padding: 0.2em;
+
+        color: gray;*/
+font: 57 italic 13pt &quot;URW Chancery L&quot;;
+   border-width: 2px;
+    border-style: solid;
+    border-color : black;
+    border-radius: 20%;
+    background-color:white;</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="statusCheckBox">
+      <property name="styleSheet">
+       <string notr="true">font: 57 italic 18pt &quot;URW Chancery L&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>Cleaned</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <zorder>label_2</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>buttonBox</zorder>
+ </widget>
+ <resources>
+  <include location="doc.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>StatusDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>StatusDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
