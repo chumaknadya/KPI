@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Docs</title>
+   <meta name="description" content="docs">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+   integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+   <link type="text/css"  href="../public/stylesheets/style.css"  rel="stylesheet"/>
+</head>
+<body>
+<div class="jumbotron text-center">
+  <h1>Animal  API</h1>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+         <h1 class="display-5">Аутентифікація</h1>
+         <h3>Базова аутентифікація</h3>
+          <p>
+            Частина ресурсів доступні без аутентифікації, але деякі із ресурсів потребують базової аутентифікації для доступу до них.
+            Логіном слугує username користувача.
+            Якщо запит до такого ресурсу не міститиме даних користувача, то відповіддю буде статус <kbd>401 Unauthorized</kbd> і тіло:
+            <pre>
+            {
+              "message": "Requires authentication"
+            }
+            </pre>
+          </p>
+          <p>Якщо запит до такого ресурсу не буде відповідати повноваженням користувача,то відповіддю буде статус <kbd>403 Forbidden</kbd> і тіло</p>
+           <pre>
+            {
+              "message": "No access to the resource"
+            }
+            </pre>
+          <h1 class="display-5">URL доступниx ресурсів</h1>
+          <h4>Отримати список усіх тварин</h4>
+          <h5>GET <code>/api/v1/animals</code></h5>
+          <p>Відповідь</p>
+          <pre>
+            [
+                        {
+                            "id": 19,
+                            "breed": "Rabbit",
+                            "description": "Rabbits are small mammals ",
+                            "facts": [
+                                "A rabbit’s life span is about 8 years",
+                                "A baby rabbit is called a kit.  A group of rabbits is called a herd",
+                                "Rabbits and hares are “lagomorphs”",
+                                "A rabbit teeth never stop growing!",
+                                "A rabbit symbol is often used to show that a product was not tested on animals",
+                                "Bunnies cannot vomit",
+                                "Jackrabbits have been clocked at speeds of 45 miles per hour"
+                            ],
+                            "picture": null,
+                            "picture_type": null
+                        },
+                        {
+                            "id": 20,
+                            "breed": "Panda",
+                            "description": "Pandas have a bear like appearance",
+                            "facts": [
+                                "Baby pandas are born pink and measure about 15cm",
+                                "Giant pandas (often referred to as simply “pandas”) are black and white bears",
+                                "These guys are BIG eaters – every day they fill their tummies for up to 12 hours",
+                                "The giant panda scientific name is Ailuropoda melanoleuca",
+                                "Giant pandas grow to between 1.2m and 1.5m",
+                                "Family time! Female pandas give birth to one or two cubs every two years",
+                                "these beautiful bears are endangered"
+                            ],
+                            "picture": null,
+                            "picture_type": null
+                        }
+            ]
+          </pre>
+          
+          <h4>Отримати інформацію про тварину</h4>
+          <h5>GET <code>/api/v1/animals/:id(\\d+)</code></h5>
+          <p>Відповідь</p>
+          <pre data-lang="HTML">
+          {
+                  "id": 19,
+                  "breed": "Rabbit",
+                  "description": "Rabbits are small mammals ",
+                  "facts": [
+                      "A rabbit’s life span is about 8 years",
+                      "A baby rabbit is called a kit.  A group of rabbits is called a herd",
+                      "Rabbits and hares are “lagomorphs”",
+                      "A rabbit teeth never stop growing!",
+                      "A rabbit symbol is often used to show that a product was not tested on animals",
+                      "Bunnies cannot vomit",
+                      "Jackrabbits have been clocked at speeds of 45 miles per hour"
+                  ],
+                  "picture": null,
+                  "picture_type": null
+          }
+          
+          </pre>
+          <h4>Отримати список усіх користувачів</h4>
+          <h5>GET <code>/api/v1/users</code></h5>
+          <p>Відповідь</p>
+          <pre>
+     [
+          {
+                    "user_id": 3,
+                    "role": "user",
+                    "username": "nadya",
+                    "password": "7cc14215404c741e4c9b0c795da63fdadbfaef9eb67b649a69cf5e9b208798fddd"
+          },
+          {
+                    "user_id": 4,
+                    "role": "user",
+                    "username": "nadinka",
+                    "password": "fb2786d83915e5c3b47f4d2694f902af767ae3fb3bd59324a96972a44fb6e54414"
+          }
+    ]
+          </pre>
+          <h4>Видалити тварину по унікальному ідентифікатору</h4>
+          <h5>POST <code>/api/v1/animals/:id(\\d+)</code></h5>
+          <p>Відповідь</p>
+          <pre>
+              {
+                "response":1
+              }
+          </pre>
+          <h4>Пошук тварин за породою</h4>
+          <h5>POST <code>/api/v1/animals/search</code></h5>
+          <p>Відповідь</p>
+           <code>http://localhost:3000/api/v1/animals/search?breed=Rabbit</code>
+           <pre>
+            {
+                  "id": 19,
+                  "breed": "Rabbit",
+                  "description": "Rabbits are small mammals ",
+                  "facts": [
+                      "A rabbit’s life span is about 8 years",
+                      "A baby rabbit is called a kit.  A group of rabbits is called a herd",
+                      "Rabbits and hares are “lagomorphs”",
+                      "A rabbit teeth never stop growing!",
+                      "A rabbit symbol is often used to show that a product was not tested on animals",
+                      "Bunnies cannot vomit",
+                      "Jackrabbits have been clocked at speeds of 45 miles per hour"
+                  ],
+                  "picture": null,
+                  "picture_type": null
+           }
+          </pre>
+          <h4>Додати інформацію про нову тварину(створення сутності)</h4>
+          <h5>POST <code>/api/v1/animals/create</code></h5>
+          <p>Відповідь</p>
+          <pre>
+              {
+                "response":1
+              }
+          </pre>
+          <h4>Зареєструватися</h4>
+          <h5>POST <code>/api/v1/register</code></h5>
+          <p>Відповідь</p>
+          <pre>
+              {
+                "response":1
+              }
+          </pre>
+          <h3>Коренева точка доступу до Animal API:</h3>
+          <code>http://localhost:3000/api/v1</code>
+          <h1 lass="display-5">Види помилок<h1>
+          <h3>Клієнтські помилки</h3>
+          <p>Якщо не знайдено сутність отримаємо  <kbd>404 Not Found</kbd></p>
+          <pre>
+          {
+            message: "Resource not found, but it may be available in the future" 
+          }
+          </pre>
+          <p>Якщо запит не може бути виконаний з причини невірного синтаксису(а саме пошук без параметрів,створення сутності без параметрі) матимемо </p>
+          <kbd>400 Bad Request</kbd>
+          <pre>
+          {
+            message: "There is no params"" 
+          }
+          </pre>
+          <p>Якщо веб-сервер не може прийняти запит користувача через те,що надані користувачем дані вже містяться у БД, матимемо </p>
+          <kbd>406 Not Acceptable </kbd>
+          <pre>
+          {
+            message: "This user is busy" 
+          }
+          <pre>
+          <h3>Серверні помилки</h3>
+          <kbd>500 Internal Server Error</kbd>
+    </div>
+  </div>
+</div>
+</body>
+</html>

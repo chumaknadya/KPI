@@ -1,0 +1,37 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Search</title>
+  <meta name="description" content="register">
+  <link type="text/css"  href="../public/stylesheets/formstylesheet.css"  rel="stylesheet"/>
+  <link type="text/css"  href="../public/stylesheets/style.css"  rel="stylesheet"/>
+</head>
+<body>
+ 	<div class="header">
+        <h1>Registration</h1>
+    </div>
+	<div class="registration">
+		<form action='/register' method='POST'>
+	    	<div class="section"><span>1</span>Username</div>
+			<div class="inner-wrap">
+				<label>Username:</label>
+				<input type='text' name='username' class='form-control' required/>
+			</div>
+			<div class="section"><span>2</span>Password</div>
+			<div class="inner-wrap">
+				<label>Password:</label>
+				<input type='password' name='pass' class='form-control' required />
+				<label>Repeat password:</label>
+				<input type='password' name='pass2' class='form-control' required />
+			</div>
+			<div class="btn">
+			   <span class="privacy-policy">
+		    	<input type='submit' value='Register'>
+			   </span>
+			</div>
+			</form>
+	</div>
+</body>
+</html>

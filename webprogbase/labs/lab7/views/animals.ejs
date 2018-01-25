@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Animals</title>
+    <meta name="description" content="about animals">
+    <link type="text/css"  href="../public/stylesheets/style.css"  rel="stylesheet"/>
+</head>
+<body>
+   <% include partials/header %>  
+  <div class="header">
+        <h1>Animals</h1>
+  </div>
+  <div class="transitions">
+      <% if(user) { %>
+         <a class="mainlink" href="/">Home</a>
+         <a  class="mainlink"  href="/animals/search">Search</a>
+         <a  class="mainlink" href="/animals/form">Create</a>
+         <% if(user.role == "admin") { %>
+                  <a  class="mainlink" href='/admin'>Users</a>
+            <%}%>
+      <%}else {%>
+          <a class="mainlink" href="/">Home</a>
+     <%}%>
+    </div>
+    <div class="listOfAnimals">
+    <ul class="list">
+       <% for (let i of animals) { %>
+             <li><img class="animal" src="data:image/<%=i.picture_type%>;base64,<%=i.picture%>" alt="picture"><h4><%=i.description%></h4>
+              <% if(user) { %>
+                 <a class="moreLink" href="animals/<%= i.id %>">more</a>
+              <%}%>
+              </img></li>
+       <%}%>
+    </ul> 
+  </div>
+</body>
+</html>

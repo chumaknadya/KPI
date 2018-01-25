@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title><%=animal.breed%></title>
+  <meta name="description" content="about <%=animal.breed%>">
+  <link type="text/css"  href="../public/stylesheets/style.css"  rel="stylesheet"/>
+</head>
+<body>
+     <% include partials/header %>  
+    <div class="header">
+        <h1><%=animal.breed%></h1>
+    </div>
+    <div class="transitions">
+        <a class="mainlink" href="/animals">Animals</a>
+    </div>
+    <h4><%=animal.description%></h4>
+     <div class="amazingFacts">
+    <h5> Amazing Facts About <%=animal.breed%>s</h5>
+        <p>
+          <ul class="list">
+              <% for (let i in animal.facts) { %>
+             <li><%=animal.facts[i]%></li>
+             <%}%>
+          </ul>
+        </p>
+    </div>
+    <div class="delete">
+        <form action="/animals/:id" method="POST" enctype="multipart/form-data" id="delete">
+             <input type="hidden" name="id" value="<%=animal.id%>">
+             <input type="submit" name= "delete" value="Delete"/>
+        </form>
+    </div>
+          
+</body>
+</html>
