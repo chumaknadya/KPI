@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Search</title>
+  <meta name="description" content="list of users">
+  <link type="text/css"  href="../public/stylesheets/formstylesheet.css"  rel="stylesheet"/>
+  <link type="text/css"  href="../public/stylesheets/style.css"  rel="stylesheet"/>
+</head>
+<body> 
+     <% include partials/header %>  
+    <div class="header">
+        <h1>List of users</h1>
+    </div>
+    <div class="transitions">
+        <a class="mainlink" href="/">Home</a>
+    </div>
+    <h6>Users (<%= users.length %>):</h6>
+    <div class = "users">
+        <ul class="list">
+            <% for (let u of users) { %>
+                <li><%= u.user_id%>   | <%= u.username %></li>
+            <% } %>
+        </ul>
+    </div>
+</body>
+</html>
