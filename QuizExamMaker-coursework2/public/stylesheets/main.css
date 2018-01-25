@@ -1,0 +1,214 @@
+body {
+  margin: 0;
+  padding: 0;
+   /* background: black;
+   color: white; */
+  background: white;
+  color: black;
+  height: 10px !important;
+}
+
+.logo{
+  float: left;
+  padding-left: 15px;
+  width: 3%;
+  padding-top: 10px;
+}
+.main-link{
+  color: black;
+  padding-left: 28%;
+  text-align: center;
+  font: 2em "Open Sans", sans-serif;
+  letter-spacing: 1px;
+  list-style: none;
+  text-decoration: none;
+  margin-left: 60px;
+}
+nav h3{
+  width: 30%;
+}
+nav {
+  background-color: black;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  
+}
+
+nav ul {
+  vertical-align: center;
+  list-style: none;
+  margin: 0;
+  padding: .6em 2em;
+  float: right;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0;
+  padding: .2em .7em;
+}
+
+nav a {
+  width: 100%;
+  height: 100%;
+  /* color: white; */
+  color:white;
+  text-decoration: none;
+  font-family: Ubuntu;
+  font-size: 1.15em;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  transition: .25s ease-in-out;
+}
+
+nav a:hover {
+  
+  color: #e5a422;
+}
+.bottom-index{
+  width: 100%;
+  background-color: black;
+  height: 125px;
+  display: inline-flex;
+}
+.logo-mini1{
+  padding-top: 20px;
+  padding-left: 670px;
+  position: relative;
+  display: inline-block;
+  width:40px;
+  height: 40px;
+}
+.logo-mini{
+  padding-top: 20px;
+  position: relative;
+  display: inline-block;
+  width:40px;
+  height: 40px;
+}
+.nav-bg {
+  content: '';
+  position: absolute;
+  display: block;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  background: white;
+  transition: .45s ease-in-out;
+}
+
+.bg-hidden {
+  top: -100%;
+  opacity: 0;
+}
+
+.bg-visible {
+  top: 0;
+  opacity: 1;
+}
+
+h1 {
+  text-align: center;
+  font: 2em "Open Sans", sans-serif;
+  letter-spacing: 1px;
+}
+
+.mainpicture {
+  position: relative;
+  width: 100%;
+  height: 700px;
+  background: rgb(50, 50, 50);
+ 
+  background: url(/public/images/quiz.png) no-repeat 50% 20% fixed;
+  background-size: 100%;
+  overflow: hidden;
+}
+.arrow{
+  position: relative;
+  width: 5%;
+  height: 5%;
+}
+.content-wrapper {
+  width: 80%;
+  padding: 1em 10%;
+}
+
+.content-wrapper h1 {
+  margin: 0;
+  color:black;
+}
+
+.content-wrapper p {
+  font-family: "Open Sans";
+  text-indent: 1.5em;
+}
+.footer{
+ 
+  text-align: center;
+  background: white;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100px;
+}
+/*drop down*/
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}

@@ -1,0 +1,44 @@
+ul.pagination{
+    display: block;
+    position: relative;
+    width: 40em;
+    text-align: center;
+    margin: 0 auto 2cm auto;
+    color: #fafafa;
+}
+
+ul.pagination li {
+    display: inline-block;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+    border-radius: 3em;
+    font-size: 1.5em;
+    line-height: 2em;
+    background-color: none;
+    transition: background 0.5s;
+    text-decoration: none;
+}
+
+
+ul.pagination li.current {
+    background-color: #f00;
+}
+.link a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fafafa;
+    text-decoration: none;
+}
+.pagClass{
+    margin-top: 50px;
+}
+.path {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: white;
+    border-radius: 4px;
+    margin-bottom: 40px;
+}

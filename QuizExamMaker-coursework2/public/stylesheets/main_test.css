@@ -1,0 +1,136 @@
+ .path{
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.linkbox_container {
+    display: flex;
+    flex-wrap: wrap;
+	margin-top: 60px;
+	text-align: center;
+}
+a.links:link, a.links:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+	display: inline-block;
+	width: 150px;
+    height: 40px;
+    margin-left: 890px;
+}
+
+
+a.links:hover, a.links:active {
+    background-color: red;
+} 
+.crt{
+	font-size: 22px;
+    margin-left: 30px;
+    text-decoration: none;
+    color: red;
+}
+
+    /* .linkrow {
+        display: flex;
+        justify-content: center;	
+        background-color: white;
+        padding: 1em 3em 3em;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+	a {
+		flex: 1;
+		background-color: #fff;
+	
+		margin: 0 0.5em;
+        padding: 0 0 2.25em;
+    
+		text-align: center;
+		text-decoration: none;
+		color: #666;
+		border-radius: 6px;
+		position: relative;
+	}
+	div {
+	}
+	h3 {
+		font-size: 1.4em;
+		padding: 1em 1em 0;
+		margin-top: 0;
+	}
+	p {
+		padding: 0 1em 1em;
+	}
+	span {
+		display: block;
+		position: absolute;
+		padding: 0.5em 0;
+		bottom: 1em;
+		width: 150px;
+		left: 50%;
+		margin-left: -75px;
+		background-color: #666;
+		border: none;
+		color: #fff;
+		text-transform: uppercase;
+		font-weight: 400;
+		border-radius: 6px;
+	}
+
+	a:hover {
+		border-color: #f00;
+		box-shadow: 0 0.25em 5px rgba(0,0,0,0.3);
+		
+	}
+    h3 {
+        color: #f00;
+    }
+    span {
+        background-color: #f00;
+    }
+	 */
+	/* <div class="linkrow">
+	 <% for (let i of tests) { %>
+	  <a href="/">
+		<div class="delete">
+		  <form action="/tests/:id" method="POST" enctype="multipart/form-data" id="delete">
+			  <input type="hidden" name="id" >
+			  <input  class="delete" type="submit" name= "delete" value="Delete"/>
+		  </form>
+		</div>
+		<div>
+		<h3>Test<%=i%></h3>
+		<p>About test</p>
+		<span>View</span>
+		</div></a>
+	 <%}%>  
+</div>*/
+#forEmptyItem{
+	font-size: 45px;
+    text-align: center;
+    margin-top: 200px;
+}
+body {
+	background:url(/public/images/users.jpg);
+	background-size: 79%;
+	font-family: "Roboto", helvetica, arial, sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	text-rendering: optimizeLegibility;
+  }
+  #items{
+
+  }
+  ul{
+	margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 820px
+  }
+  .item{
+	  display:inline-block;
+  }

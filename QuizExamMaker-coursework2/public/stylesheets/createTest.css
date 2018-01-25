@@ -1,0 +1,61 @@
+.path{
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+.createTest {
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-left: 600px;
+    margin-right: 100px;
+    margin-top: 100px;
+}
+input[type=text], select, textarea {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    height: 40px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 44px;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+body {
+    background:url(/public/images/users.jpg);
+    background-size: 79%;
+    font-family: "Roboto", helvetica, arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+  }
+  .creation{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 32px;
+  }
+  label{
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-size: 28px;
+    font-weight: 500;
+    padding-right: 20px;
+  }

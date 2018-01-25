@@ -1,0 +1,94 @@
+.register-page {
+  width: 500px;
+  padding: 8% 0 0;
+  margin: auto;
+  margin-top:100px;
+}
+.form_reg {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 500px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form_reg input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form_reg button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: black;
+  /* #4CAF50; */
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form_reg button:hover,.form button:active,.form button:focus {
+  background: #474643;
+  /* #43A047; */
+}
+.form_reg .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form_reg .message a {
+  color: black;
+  /* #4CAF50; */
+  text-decoration: none;
+}
+body {
+  background: #76b852; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #C0F1EE, #C0F1EE);
+  background: -moz-linear-gradient(right, #C0F1EE, #C0F1EE);
+  background: -o-linear-gradient(right, #C0F1EE, #C0F1EE);
+  background: linear-gradient(to left, #C0F1EE, #C0F1EE);
+  background:url(/public/images/backround.jpg);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+ select#role {
+  -webkit-appearance: button;
+  -webkit-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -webkit-user-select: none;
+  font-family: "Roboto", sans-serif;
+  color: #555;
+  font-size: inherit;
+  margin: 12px;
+  overflow: hidden;
+  padding: 7px 12px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 404px;
+  margin-left:-3.3px;
+  border: none;
+  margin-left: 2px;
+  width: 409px;
+  background: #f2f2f2;
+  height: 43px;
+  margin-bottom: 13px;
+  margin-top: 2px;
+} 
+option:hover{
+ background-color: red;
+}
+

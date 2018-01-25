@@ -1,0 +1,117 @@
+.path{
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+.right{
+    box-shadow: 2px 2px 8px 3px #757575;
+    margin-left: 0px;
+    background: #ffffff;
+    height: 100%;
+    padding: 25px;
+    margin-top: 90px;
+    margin-left: 30px;
+    margin-right: 30px;
+   
+}
+.test_design{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size:22px; 
+    font-weight: bold;
+    margin-bottom:15px;
+}
+
+.delete {
+    margin-left: 890px;
+    margin-top: -9px;
+    border: none;
+    background-color: transparent;
+}
+.delete :hover{
+    background: black;
+    color:white;
+    
+}
+
+.correct{
+    background-color: green;
+    width: 60px;
+}
+#timerText{
+    margin-left: 10px;
+    font-style: italic;
+}
+.TestName{
+    font-size: 32px;
+    text-align: center;
+    font-weight: 450;
+}
+.question{
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: 100;
+}
+.multiply{
+    margin-top: 2px;
+    margin-left: 50px;
+    font-weight: 200;
+    font-size: 17px;
+    font-style: inherit;
+}
+.dropdown{
+    margin-left: 60px;
+}
+.textInp{
+    margin-left: 60px;
+}
+.textinp input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.finishTest{
+    background: #fdfdfd;
+    color: #3c3b38;
+    margin-left: 850px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 4px;
+    font-style: inherit;
+    width: 150px;
+}
+.finishTest:hover{
+    background: #3a3a3a;
+    color: white;
+}
+.textinp{
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+    font-style: inherit;
+    font-weight: 100;
+    font-size:16px;
+}
+.sel,select{
+    width: 200px;
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.option{
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 300;
+}
+.sel, select {
+    width: 200px;
+    /* background-color: transparent; */
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 300;
+}
