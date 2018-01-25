@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Cats</title>
+  <meta name="description" content="about cats">
+  <link type="text/css"  href="../public/stylesheets/style.css"  rel="stylesheet"/>
+</head>
+<body>
+    <div class="header">
+        <h1><%=animal.breed%></h1>
+    </div>
+    <h4><%=animal.description%></h4>
+    <div class="amazingFacts">
+    <h5> Amazing Facts About <%=animal.breed%>s</h5>
+        <p>
+          <ul class="list">
+              <% for (let i in animal.facts) { %>
+             <li><%=animal.facts[i]%></li>
+             <%}%>
+          </ul>
+        </p>
+    </div>
+          
+</body>
+</html>

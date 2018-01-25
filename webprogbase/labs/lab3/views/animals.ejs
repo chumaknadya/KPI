@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Animals</title>
+    <meta name="description" content="about animals">
+    <link type="text/css"  href="../public/stylesheets/style.css"  rel="stylesheet"/>
+</head>
+<body>
+  <div class="header">
+        <h1>Animals</h1>
+  </div>
+  <div class="listOfAnimals">
+    <ul class="list">
+       <% for (let i of animals) { %>
+             <li><img class="animal" src="<%=i.picture%>" alt="text"><h4><%=i.description%></h4></img></li>
+             
+        <%}%>
+
+     </ul> 
+  </div>
+</body>
+</html>
