@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz</title>
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/public/stylesheets/main.css"> 
+</head>
+<body>
+ <!--
+  <nav>
+    <div class="nav-bg"></div>
+      <ul>
+        <% include partials/header %>  
+      </ul>
+  </nav>
+<div class="mainpicture">
+<h1></h1></div>
+<div class="content-wrapper">
+    <h1>Prepare any type of online quiz, test or exam. Collect and analyse responses</h1>
+</div>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src="/public/js/index.js"></script>
+<div class="footer"></div>-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+          <img class="logo" src="../public/images/logo-sm.png"></img>
+          <a><span style="color: white; float: left; padding: .6em .2em; font-family: Ubuntu; font-size: 1.15em; padding-left: 38%;">Quiz Exam Maker v 1.4</span></a>
+          <ul>
+            <% include partials/header %>  
+          </ul>
+      </nav>
+    <div class="mainpicture">
+    <h1></h1></div>
+    <div class="content-wrapper">
+        <h1><img class="arrow" src="../public/images/arrow.png"></img></h1>
+        <% if(user) { %>
+            <a class="main-link" style="padding-left: 500px;" >Welcome at Quiz Exam Maker!</a>
+        <%} else { %>
+            <a class="main-link" href="/login">Join a big family of Quiz Exam Maker!</a>
+        <%}%>
+      
+    </div>
+    <div class="bottom-index">
+      <h1><img class="logo-mini1" src="../public/images/trademark.png"></img></h1>
+      <h1 style="color:white; padding-top: 20px; padding-right: 20px;">Nadya LTD 2017</h1>
+      <h1><img class="logo-mini" src="../public/images/twit.png"></img></h1>
+      <h1><img class="logo-mini" src="../public/images/linkedin.png"></img></h1>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Profile</title>
+  <link rel="stylesheet" href="/public/stylesheets/profile.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  
+</head>
+<body>
+    <div class="fond">
+	    <span class="s1">Profile</span> 
+	    <span class="s2">Page</span>
+  </div>
+   <div class="card">
+	    <div  class="thumbnail"> 
+          <img class="left" src="<%=user.avatar_url%>"></img>
+      </div>
+      
+      <div class="right">
+		      <h1>Profile</h1>
+              <div class="author">
+                	<img src="<%=user.avatar_url%>" alt="avatar"></img>
+		            	<h2><%=user.username%></h2>
+            </div>
+            <div class="separator"></div> 
+             <p class="headline">Email</p> <p class="text"><%= user.email %> </p>
+             <%if(user.role != "student") { %>
+                    <p class="headline">Created Tests</p>
+                      <p class="text">
+                      <% for (let i of tests) {%>
+                          <div class="forTest">
+                              <a class="lin" href="/tests/<%= i.id%>"><%= i.test_name %></a>
+                         </div>
+                       <%}%>
+                    </p>
+             <% } %>
+          
+              <div class="avatar">
+                <form action="/profile" method="POST"  enctype="multipart/form-data" >
+                        <input type="file"  class="upload ph-button ph-btn-blue"  class="upload"  id ="picture" name="picture" required>
+                        <input type="submit"  class="ph-button ph-btn-blue"   style="margin-top: 7px;" value="Submit">
+                </form>
+          </div>
+       </div>
+      
+   </div>
+  
+</body>
+</html>

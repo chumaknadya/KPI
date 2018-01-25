@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>LogIn</title>
+  <meta name="description" content="log in">
+  <link type="text/css"  href="../public/stylesheets/formstylesheet.css"  rel="stylesheet"/>
+  <link type="text/css"  href="../public/stylesheets/form.css"  rel="stylesheet"/>
+</head>
+<body>
+<img class="imgB1" src="../public/images/question.png">
+<div class="login-page">
+    <div class="form">
+        <form class="login-form" action='/login' method='POST'>
+            <input type="text" name="username" placeholder="username"/>
+            <input type="password" name="password" placeholder="password"/>
+            <button type="submit">login</button>
+            <p class="message">Not registered? <a href="/register">Create an account</a></p>
+        </form>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tests</title>
+  <meta name="description" content="listOfTests">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+   <link href="/maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="/public/stylesheets/pagination.css">
+   <link rel="stylesheet" href="/public/stylesheets/main.css">
+   <link rel="stylesheet" href="/public/stylesheets/style.css">
+    <link rel="stylesheet" href="/public/stylesheets/main_test.css">
+    <link rel="stylesheet" href="/public/stylesheets/testCourusel.css">
+  <script src = "../../public/javascript/search.js"></script>
+   <script src = "../../public/javascript/script.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <img class="logo" src="../public/images/logo-sm.png"></img>
+      <a><span style="color: white; float: left; padding: .6em .2em; font-family: Ubuntu; font-size: 1.15em; padding-left: 38%;">Quiz Exam Maker v 1.4</span></a>
+      <ul>
+          <i class="glyphicon glyphicon-home" style="color:white;"></i><li><a href="/">Home</a></li>  
+          <i class="glyphicon glyphicon-user" style="color:white;"></i><li><a href="/profile">Profile</a></li>
+          <% if(user.role =="teacher" || user.role =="administrator") { %>
+               <i class="glyphicon glyphicon-plus" style="color:white;"></i><li><a href="/tests/create">Create Test</a></li> 
+          <%} %>
+      </ul>
+       <div class="nav navbar-nav navbar-right">
+            <div class="navbar-form" role="search">
+            <div class="input-group">
+                <input type="search" id="filter_string" class="form-control"  name="test_name" id="search" placeholder="Search..." />
+                <div class="input-group-btn">
+                    <button class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+                </div>
+            </div>
+            </div>
+         </div>
+       <!-- <input type="search" id="filter_string"  name="test_name" id="search" placeholder="Search..." />-->
+  </nav>
+    <div class="path">
+       
+    </div>
+    <ul id="myPagination">
+    </ul>
+    <% include list/test-list %>
+    <div class="bodyOfTests">
+        <div id="items">
+           
+        </div>
+       
+        <div id="forEmptyItem">
+        </div>
+    </div> 
+
+
+<!--
+    <ul id="carousel">		
+        <li class="visible"><a href="http://www.rapidxhtml.com/">dfgdf<img src="https://cdn2.iconfinder.com/data/icons/productivity-at-work/256/To-Do_List-512.png" alt="test" /></a></li>
+        <li class="visible"><a href="http://imcreator.com/">dfgdf<img src="https://cdn2.iconfinder.com/data/icons/productivity-at-work/256/To-Do_List-512.png" alt="test" /></a></li>
+        <li class="visible"><a href="http://www.emailonacid.com/">dfgdf<img src="https://cdn2.iconfinder.com/data/icons/productivity-at-work/256/To-Do_List-512.png" alt="test" /></a></li>
+    </ul>-->
+</body>
+</html>

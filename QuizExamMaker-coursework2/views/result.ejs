@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Students Test</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <link href="/maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+     <link rel="stylesheet" href="/public/stylesheets/main.css">
+    <link rel="stylesheet" href="/public/stylesheets/users.css">
+    <script src = "../../public/javascript/result.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" />
+<script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <img class="logo" src="../public/images/logo-sm.png"></img>
+      <a><span style="color: white; float: left; padding: .6em .2em; font-family: Ubuntu; font-size: 1.15em; padding-left: 38%;">Quiz Exam Maker v 1.4</span></a>
+      <ul>
+          <i class="glyphicon glyphicon-home" style="color:white;"></i><li><a href="/">Home</a></li>  
+          <i class="glyphicon glyphicon-user" style="color:white;"></i><li><a href="/profile">Profile</a></li>
+      </ul>
+  </nav> 
+ <div class="listOfUsers">
+  <table id="myTable">
+    <tr>
+      <th>Username</th>
+      <th>PDF</th>
+      <!--<th>Point</th>-->
+    </tr>
+        <%for(let i = 0 ; i < result.length; i++) { %>
+          <tr>
+          <td><%=users[i].username%></td>
+          <td>
+           <a href="/tests/pdf?name=<%=result[i].result%>"><i class="glyphicon glyphicon-file" ></i></a>
+          </td>
+          <!--<td class="score">
+            <input type="number" class="inputText"  id="<%=i%>" min="0" max ="100" >
+            <button id="submitMark" value="<%=result[i].user_id%>">OK</button></input>
+          </td>-->
+        </tr>
+       <%}%>
+  </div>
+</table>
+ </div>
+</body>
+</html>

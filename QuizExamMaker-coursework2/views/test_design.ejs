@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Design</title>
+  <meta name="description" content="TestDesign">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+       <link rel="stylesheet" href="/public/stylesheets/test.css">
+       <link rel="stylesheet" href="/public/stylesheets/main.css">
+        <script src = "../../public/javascript/test.js"></script>
+        <script src = "../../public/javascript/collectors.js"></script>
+</head>
+<body>
+ <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <img class="logo" src="../../public/images/logo-sm.png"></img>
+      <a><span style="color: white; float: left; padding: .6em .2em; font-family: Ubuntu; font-size: 1.15em; padding-left: 38%;">Quiz Exam Maker v 1.4</span></a>
+      <ul>
+          <i class="glyphicon glyphicon-home" style="color:white;"></i><li><a href="/">Home</a></li>  
+          <i class="glyphicon glyphicon-user" style="color:white;"></i><li><a href="/profile">Profile</a></li>
+          <i class="glyphicon glyphicon-th-list" style="color:white;"></i> <li><a href="/tests"> All Tests</a></li>
+      </ul>
+  </nav>
+  <div class="path">
+  </div>
+  <div class="all_test_content">
+     <div class="left_part">
+         <div class="back_home">
+             <a href='/'><span class="i"><a href='/'></span></a>
+         </div>
+         <div class="save_test">
+              <button class="btn btn-success btn-lg" id="saveButton" type="button"><i class="glyphicon glyphicon-cloud-upload"></i> Save</button>
+              <div class="last_save" style="display:none;">saved</div>
+         </div>
+         <!-- <div class="import_questions">
+            <button class="btn btn-default" type="button">Import Questions</button>
+            <div class="dwn_template">Download template</div>
+         </div>-->
+          <!--<div class="pages_index">
+               <span class="page_icon"> Pages Index</span>
+          </div>-->
+     </div>
+     <div class="right">
+         <div class="test_settings"><i class="glyphicon glyphicon-wrench"></i> Test Settings
+             <!-- <div class="form_settings">
+                <form>-->
+                <div class="forSettings">
+                  <!--<input type="text" id="test_name" class="form-control ng-pristine ng-valid ng-touched" name="test_name" required></input>-->
+                 <!-- <div>
+                        <label class="labelforsettings">Test hours</label>
+                        <input id="hours" type="number" step="1" min="0" max="20">
+                  </div>-->
+                  <div>
+                        <label class="labelforsettings">Test minutes</label>
+                        <input id="minutes" class="forNumber" type="number" step="1" min="0" max="60">
+                  </div>
+                  <div>
+                       <label class="labelforsettings">Test seconds</label>
+                       <input id="seconds" type="number" step="10" min="0" max="60">
+                  </div>
+                   <div>
+                        <label class="labelforsettings">Status</label>
+                            <select id="selectstatus" class="forDropDown"  style="width:300px;">
+                                    <option>Active</option>
+                                    <option>Passive</option>
+                            </select>
+                        
+                   </div>
+                   <!--<input id="datetime" type="datetime-local">-->
+               
+               
+              <!--  </form>
+              </div>-->
+             </div>
+          <div class="test_design"><i class="glyphicon glyphicon-list-alt"></i> Test Design
+          <!--<div class="pageToolBar"><h6 class="forQuestionBar"><i class="glyphicon glyphicon-file"></i>Page-->
+              <!--<button class="btn btn-danger btn-sm"><i class="glyphicon glyphicon-trash"></i> Delete Page</button></h6>-->
+          </div>
+          <div class="page">
+                <div class="testTittle"><span class="forTittle"></span>
+                   <div class="spaceForTittle">
+                       <!--+ Test Tittle  <button id="editTestTittle" class="btn btn-default btn-sm"  style="display:none" >  
+                             <i class="glyphicon glyphicon-pencil"></i> Edit
+                        </button>-->
+                    </div>
+                </div>
+                <div class="pageTitle"><span class="forTittle"></span>
+                       <div class="spaceForTittle">
+                         <!-- + Page Tittle  <button id="editPageTittle" class="btn btn-default btn-sm"  style="display:none" >
+                                <i class="glyphicon glyphicon-pencil"></i> Edit
+                            </button>-->
+                        </div>
+                </div>
+                <%include partials/page%>  
+                <%include partials/module_window%>  
+          <div>
+           
+     </div>
+  </div>
+   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</body>
+</html>

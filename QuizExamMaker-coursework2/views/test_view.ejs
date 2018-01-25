@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tests</title>
+  <meta name="description" content="listOfTests">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/stylesheets/test_view.css">
+   <link rel="stylesheet" href="/public/stylesheets/main.css">
+   <script src = "../../public/javascript/testView.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+      <img class="logo" src="../../public/images/logo-sm.png"></img>
+      <a><span style="color: white; float: left; padding: .6em .2em; font-family: Ubuntu; font-size: 1.15em; padding-left: 38%;">Quiz Exam Maker v 1.4</span></a>
+      <ul>
+          <i class="glyphicon glyphicon-home" style="color:white;"></i><li><a href="/">Home</a></li>  
+          <i class="glyphicon glyphicon-user" style="color:white;"></i><li><a href="/profile">Profile</a></li>
+          <i class="glyphicon glyphicon-th-list" style="color:white;"></i> <li><a href="/tests"> All Tests</a></li>
+      </ul>
+  </nav>
+  <div class="all_test_content">
+      <div class="right">
+       <% if(user.role =="student") { %>
+            <div><i class="glyphicon glyphicon-time"> </i><span id="timerText"> </span></div>
+        <%}%> 
+        <div class="pdf" style="display:none;">
+        </div>
+        <div class="test_design">
+            <% if(user.user_id == test.user_id) { %>
+               <form  class="delete" action="/tests/:id" method="POST" enctype="multipart/form-data" id="delete">
+                   <input type="hidden" id="test_id" name="id" value="<%=test.id%>">
+                   <input  class="delete" type="submit" name= "delete" value="X"/>
+                </form>
+            <%}%> 
+            <p class="TestName"><%=test.test_name%></p>
+            <input type="hidden" id="userId" name="user" value="<%=user.user_id%>"/> 
+            <%let num = 1;%>
+            <!--<form action='/results' method='POST'>-->
+                <input type="hidden" id="test_id" name="id" value="<%=test.id%>">
+                <% for(let i of questions) { %>
+                  <p class="question"><%=num%>.  <%=i.question_body%></p>
+                     <% if(i.question_type == "TextInput") { %>
+                         <div class="textInp">
+                            <input class="textinp" type="text" placeholder="Your answer"></input>
+                         </div>
+                     <%}%>
+                     <%if(i.question_type == "MultipleChoice") { %>
+                         <div class="multiply">
+                           <% for (let j = 0; j < answers.length;j ++) { %>
+                              <% if(i.id == answers[j].question_id) {%>
+                                  <input style="width:30px; height:20px;" type="checkbox" name="check" value="<%=answers[j].answer_body%>" ><%=answers[j].answer_body%></input>
+                              <%}%>
+                           <%}%>
+                         </div>
+                     <%}%>
+                    <%if(i.question_type == "Dropdown") { %>
+                         <div class="dropdown">
+                          <select class="sel">
+                          <option></option>    
+                          <% for (let j = 0; j < answers.length;j ++) { %>
+                            <% if(i.id == answers[j].question_id) {%>      
+                                    <option class="option"><%=answers[j].answer_body%></option>    
+                              <%}%>
+                          <%}%>
+                          </select>
+                          </div>
+                    <%}%>
+                  <%num++%>
+                <%}%>
+                <% if(user.user_id != test.user_id && user.role == "student" ) { %>
+                   <!-- <button class="finishTest"  type="submit">Finish Test</button>-->
+                    <button class="finishTest" >Finish Test</button>
+                <%}%>
+          <!-- </form>-->
+            
+        </div>
+     </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+
+          <%if(user) {%>
+              <%=user.name%>
+              <li><a href="/logout">Logout</a></li>
+              <li><a href="/profile">Profile</a></li>
+              <li><a href="/tests">Tests</a></li>
+              <%if(user.role=="administrator") { %>
+                   <li><a href="/users">Users</a></li>
+              <%}%>
+               <%if(user.role=="teacher" || user.role=="administrator") { %>
+                   <li><a href="/results">Student Tests</a></li>
+              <%}%>
+          <%} else {%>    
+             <li><a href="/login">Login</a></li>
+             <li><a href="/register">Register</a></li>
+          <%}%>
+      
