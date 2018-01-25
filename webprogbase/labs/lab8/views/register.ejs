@@ -1,0 +1,178 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sign up</title>
+  <meta name="description" content="register">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link type="text/css"  href="../public/stylesheets/formstylesheet.css"  rel="stylesheet"/>
+  <link type="text/css"  href="../public/stylesheets/style.css"  rel="stylesheet"/>
+
+</head>
+<body>
+ 	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+		<div class="navbar-header">
+				<a class="navbar-brand" href="/">N.Ch</a>
+		</div>
+		<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/animals">Animals</a></li>
+		</ul>
+
+		</div>
+   </nav>
+   <div class="container">
+        <div id="signupbox" style=" margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <div class="panel-title">Sign Up</div>
+                    <div style="float:right; font-size: 85%; position: relative; top:-10px"><a id="signinlink" href="/login" onclick="$('#signupbox').hide(); $('#loginbox').show()">Log In</a></div>
+                </div>
+                <div class="panel-body" >
+                            <form id="signupform" class="form-horizontal" role="form" action='/register' method='POST'>
+                                <div id="signupalert" style="display:none" class="alert alert-danger">
+                                    <p>Error:</p>
+                                    <span></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email" class="col-md-3 control-label">Username</label>
+                                    <div class="col-md-9">
+                                        <input type="text" class="form-control" name="username" placeholder="username"
+                                        pattern="^[A-Za-z0-9]+(?:[ _-][A-Za-z0-9]+)*$" 
+                                        title="if there's a separator it must be followed by one or more alphanumerics" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-md-3 control-label">Password</label>
+                                    <div class="col-md-9">
+                                        <input type="password" id="psw" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                                        class="form-control" name="pass" placeholder="Password" required>
+                                    </div>
+                                </div>
+								 <div class="form-group">
+                                    <label for="password" class="col-md-3 control-label">Repeat Password</label>
+                                    <div class="col-md-9">
+                                        <input type="password" id="pswmatch" oninput="check(this)" class="form-control" name="pass2" placeholder="Password" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <!-- Button -->
+                                    <div class="col-md-offset-3 col-md-9">
+									     <input id="btn-signup" class="btn btn-success" type='submit' value='Sign up'>
+                                    </div>
+                                </div>
+                                <div style="border-top: 1px solid #999; padding-top:20px"  class="form-group">
+                                    <div class="col-md-offset-3 col-md-9">
+
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+            </div>
+        </div>
+    </div>
+    <div id="message">
+        <h3>Password must contain the following:</h3>
+            <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+            <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+            <p id="number" class="invalid">A <b>number</b></p>
+            <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+    </div>
+    <script>
+
+        var myInput = document.getElementById("psw");
+        var letter = document.getElementById("letter");
+        var capital = document.getElementById("capital");
+        var number = document.getElementById("number");
+        var length = document.getElementById("length");
+
+        // When the user clicks on the password field, show the message box
+        myInput.onfocus = function() {
+            document.getElementById("message").style.display = "block";
+        }
+
+        // When the user clicks outside of the password field, hide the message box
+        myInput.onblur = function() {
+            document.getElementById("message").style.display = "none";
+        }
+
+        // When the user starts to type something inside the password field
+        myInput.onkeyup = function() {
+        // Validate lowercase letters
+        var lowerCaseLetters = /[a-z]/g;
+        if(myInput.value.match(lowerCaseLetters)) {
+            letter.classList.remove("invalid");
+            letter.classList.add("valid");
+        } else {
+            letter.classList.remove("valid");
+            letter.classList.add("invalid");
+        }
+
+        // Validate capital letters
+        var upperCaseLetters = /[A-Z]/g;
+        if(myInput.value.match(upperCaseLetters)) {
+            capital.classList.remove("invalid");
+            capital.classList.add("valid");
+        } else {
+            capital.classList.remove("valid");
+            capital.classList.add("invalid");
+        }
+
+        // Validate numbers
+        var numbers = /[0-9]/g;
+        if(myInput.value.match(numbers)) {
+            number.classList.remove("invalid");
+            number.classList.add("valid");
+        } else {
+            number.classList.remove("valid");
+            number.classList.add("invalid");
+        }
+
+        // Validate length
+        if(myInput.value.length >= 8) {
+            length.classList.remove("invalid");
+            length.classList.add("valid");
+        } else {
+            length.classList.remove("valid");
+            length.classList.add("invalid");
+        }
+        }
+        function check(input) {
+            if (input.value != document.getElementById('psw').value) {
+                input.setCustomValidity('Password Must be Matching.');
+            } else {
+                // input is valid -- reset the error message
+                input.setCustomValidity('');
+            }
+        }
+    </script>
+<!--
+	<div class="registration">
+		<form action='/register' method='POST'>
+	    	<div class="section"><span>1</span>Username</div>
+			<div class="inner-wrap">
+				<label>Username:</label>
+				<input type='text' name='username' class='form-control' required/>
+			</div>
+			<div class="section"><span>2</span>Password</div>
+			<div class="inner-wrap">
+				<label>Password:</label>
+				<input type='password' name='pass' class='form-control' required />
+				<label>Repeat password:</label>
+				<input type='password' name='pass2' class='form-control' required />
+			</div>
+			<div class="btn">
+			   <span class="privacy-policy">
+		    	<input type='submit' value='Register'>
+			   </span>
+			</div>
+			</form>
+	</div>
+	-->
+</body>
+</html>

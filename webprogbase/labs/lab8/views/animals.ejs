@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Animals</title>
+    <meta name="description" content="about animals">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link type="text/css"  href="../public/stylesheets/style.css"  rel="stylesheet"/>
+    <script src = "../public/javascript/index.js"></script>
+     <script src = "../public/javascript/auth.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+      <div class="navbar-header">
+            <a class="navbar-brand" href="/">N.Ch</a>
+      </div>
+      <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <% if(user) {%>
+                 <li><a href="/animals/form">Create</a></li>
+                  <% if(user.role == "admin") { %>
+                        <li><a href='/admin'>Users</a></li>
+                  <%}%>
+            
+            <form class="navbar-form navbar-left" action="/search" method="GET" enctype="multipart/form-data">
+                  <div class="input-group">
+                        <input type="text" class="form-control" name="breed" pattern="[^'\x22]+" title="Invalid input" id="filter_string"  placeholder="Search">
+                        <div class="input-group-btn">
+                              <!-- <button class="btn btn-default" type="submit">-->
+                               <i class="glyphicon glyphicon-search"></i>
+                               </button>
+                        </div>
+                  </div>
+            </form>
+             <%}%>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+            <% if (user) { %>
+            <li><a><%= user.username %></a></li>
+            <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+            <% } else { %>
+            <li><a href="/register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            <% } %>
+      </ul>
+      </div>
+  </nav>
+   <div class="container">
+	 <div class="row">
+		<h2>LIST OF ANIMALS</h2>
+	 </div>
+   </div>
+    <% include list/animal-list %>
+    <div id="items">
+
+	</div>
+    <ul id="myPagination" class="pagination" >
+	</ul>
+    
+
+   
+  </div>
+</body>
+</html>

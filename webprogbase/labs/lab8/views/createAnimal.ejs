@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CreateAnimal</title>
+  <meta name="description" content="creation">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link type="text/css"  href="../public/stylesheets/style.css"  rel="stylesheet"/>
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+		<div class="navbar-header">
+				<a class="navbar-brand" href="/">N.Ch</a>
+		</div>
+		<ul class="nav navbar-nav">
+				<li class="active"><a href="/">Home</a></li>
+				<li><a href="/animals">Animals</a></li>  
+		</ul>
+		
+		</div>
+   </nav>
+  <div class="creation">
+   
+    <form action="/animals/form" method="POST"  enctype="multipart/form-data" >
+      <fieldset>
+        <div>
+            <label for="breed">Breed:</label>
+            <input type="text" id="breed" oninput="checkName(this)" name="breed" value="<%= animals.breed%>"
+             title="breed must begin with uppercase letter(there must be one word)" required></input>
+        </div>
+        <div>
+           <label for="description">Description:</label>
+           <input type="text"  id="description" onkeyup="checkDescription(this)" name="description" value="<%=animals.description%>" 
+           title="string must end with dot,exclamation point,question mark,in other case, the sentence will not be counted.First letter must be uppercase" required></input>
+        </div>
+        <div>
+          <label for="facts"> 7 Facts:</label>
+          <input type="text" id="text" onkeyup="check(this)" name="fact1" value="<%=animals.facts%>"
+           title="string must begin with lowercase letter and may contain separator(' ',',','-','_')" required></input>
+          <input type="text" id="text" onkeyup="check(this)" name="fact2" value="<%=animals.facts%>"
+           title="string must begin with lowercase letter and may contain separator(' ',',','-','_')" required></input>
+          <input type="text" id="text" onkeyup="check(this)" name="fact3" value="<%=animals.facts%>"
+          title="string must begin with lowercase letter and may contain separator(' ',',','-','_')"  required></input>
+          <input type="text" id="text" onkeyup="check(this)" name="fact4" value="<%=animals.facts%>" 
+          title="string must begin with lowercase letter and may contain separator(' ',',','-','_')" required></input>
+          <input type="text" id="text" onkeyup="check(this)" name="fact5" value="<%=animals.facts%>" 
+          title="string must begin with lowercase letter and may contain separator(' ',',','-','_')" required></input>
+          <input type="text" id="text" onkeyup="check(this)" name="fact6" value="<%=animals.facts%>"
+           title="string must begin with lowercase letter and may contain separator(' ',',','-','_')" required></input>
+          <input type="text" id="text"  onkeyup="check(this)" name="fact7" value="<%=animals.facts%>"
+          
+        <div>
+          <label for="picture">Picture:</label>
+          <input type="file" class="upload" accept="image/*" onchange="checkFile(this)"  id ="picture" name="picture" value="<%=animals.picture%>" required>
+        </div>
+         <input type="submit" value="OK" />
+      </fieldset> 
+    </form>
+  </div>
+  <script>
+    function check (input){
+        let pattern=/^[a-z][a-zA-z0-9]+(?:[ ,-][A-Za-z0-9]+)*$/g
+        if (!input.value.match(pattern)) {
+              input.setCustomValidity("string must begin with lowercase letter and may contain separator( ,-_)");
+        }else {
+            // input is valid -- reset the error message
+            input.setCustomValidity('');
+        }
+   }
+    function checkName (input){
+        let pattern=/^[A-Z][a-z]+/g
+        if (!input.value.match(pattern)) {
+              input.setCustomValidity("breed must begin with uppercase letter,the last letters must be lowercase(there must be only one word )");
+        }else {
+            // input is valid -- reset the error message
+            input.setCustomValidity('');
+        }
+   }
+   function checkDescription(input){
+        let pattern=/^[A-Z][^.?!]+((?![.?!]['"]?\\s["']?[A-Z][^.?!]).)+[.?!]+/g
+        if (!input.value.match(pattern)) {
+              input.setCustomValidity("string must end with dot,exclamation point,question mark,in other case, the sentence will not be counted.First letter must be uppercase");
+        }else {
+            // input is valid -- reset the error message
+            input.setCustomValidity('');
+        }
+   }
+   function checkFile(sender) {
+     let pattern = /([^\s]+(\.()(jpg|jpeg|png|gif|bmp))$)/g
+      if (!sender.value.match(pattern)) {
+        alert("Invalid file selected, valid files are jpg,jpeg,png,gif,bmp");
+        sender.value=''
+        return false;
+      }
+      else {
+        return true;
+      }
+  }
+  </script>
+
+</body>
+</html>

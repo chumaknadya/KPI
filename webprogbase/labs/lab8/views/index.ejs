@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Main page</title>
+  <meta name="description" content="Main page">
+  <meta name="author" content="chumak nadia">
+ 
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+   integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <link type="text/css"  href="../public/stylesheets/style.css"  rel="stylesheet"/>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">N.Ch</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/">Home</a></li>
+      <li><a href="/animals">More</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <% if (user) { %>
+        <li><a><%= user.username %></a></li>
+        <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Log out</a></li>
+      <% } else { %>
+        <li><a href="/register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      <% } %>
+    </ul>
+  </div>
+</nav>
+   <h4>
+      Find your favourite animals, where and how they live, the latest news about them and who's filming them right now
+  </h4>
+  <div class="quotes">
+    <blockquote>
+      <p>
+        "Such short little lives our pets have to spend with us, and they spend most of it waiting<br> 
+        for us to come home each day." - John Grogan 
+      </p>
+    </blockquote>
+    <blockquote>
+      <p>
+         Some people talk to animals. Not many listen though. That's the problem.”
+          ― A.A. Milne, Winnie-the-Pooh 
+        </p>
+    </blockquote>
+    <blockquote>
+      <p>
+          “If having a soul means being able to feel love and loyalty and gratitude, then animals <br>
+          are better off than a lot of humans.”
+             ― James Herriot, All Creatures Great and Small 
+      </p>
+    </blockquote>
+    <img class="animalFromMainPage" src="../public/images/animal.jpg">
+</body>
+</html>

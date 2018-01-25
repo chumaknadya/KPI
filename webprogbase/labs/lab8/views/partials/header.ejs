@@ -1,0 +1,9 @@
+<div id='header-nav' class='header-func'>
+  <% if (user) { %>
+        <p class="username"> <%= user.username %>  </p>
+        <a class="logout" href='/logout'>Log out</a>
+      <% } else { %>
+        <a class="registration" href='/register'>Register</a>
+        <a class="login" href='/login'>Log in</a>
+  <% } %>
+</div>
