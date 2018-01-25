@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "breed": "Cat",
+        "description": "Cats are highly intelligent creatures that have been associated with humans for over 9,500 years. They are carnivores and extremely skilled hunters– they are known to hunt over 1,000 different species of animal",
+        "picture": "../public/images/cat.jpg",
+        "facts": [
+            "Cats are felines and the ones that have been domesticated are known as house cats",
+            "They are carnivores that are skilled hunters and are known to hunt over 1,000 species for food",
+            "They have been associated with humans for at least 9,500 years",
+            "Cats are intelligent animals",
+            "Cats communicate by meowing, purring, hissing, growling, squeaking, chiring, clicking, and grunting",
+            "hobby of breeding and showing cats is called “Cat Fancy”",
+            "Cats can have three to five kittens in each litter"
+        ]
+    },
+    {
+        "id": 2,
+        "breed": "Dog",
+        "description": "The dog is one of the most popular pets in the world.It ordinarily remains loyal to a considerate master, and because of this the dog has been called man's best friend. Class distinctions between people have no part in a dog's life",
+        "picture": "../public/images/dog.jpg",
+        "facts": [
+            "Evidence based on behaviour, vocalisations, morphology, and molecular biology, has led to the current widely accepted scientific  understanding that all breeds of domestic dog have descended from the grey wolf",
+            "Humans and dogs have co-evolved through living together for over 12,000 thousand years. While clearly humans have significantly  impacted on the evolution of dogs through selective breeding, the intimate presence of dogs in human culture has also impacted on the evolution of humans",
+            "Dogs have their own in individual personalities",
+            "Dogs ave a very high degree of social intelligence. They learn in a variety of different ways such as reinforcement or through observing the behaviour of other dogs, and even humans. They go through a series of cognitive development stages, just like humans",
+            "Human faces are known to be asymmetrical, with people instinctively moving their gaze to the right side of a face when they meet someone and try to discern their emotional state",
+            "Dogs have developed the same instinct when encountering a human, despite the factthat they do not do this when meeting other dogs. No other non-primate is known to do this",
+            "Dogs have been shown to display a range of complex emotions, including optimism, pessimism, depression and jealousy"
+        ]
+    },
+    {
+        "id": 3,
+        "breed": "Rabbit",
+        "description": "Rabbits are small mammals in the family Leporidae. They have long ears, up to 4 in (10 cm) long, and powerful hind legs. Size varies, with European rabbits ranging from 13–20 in (34–50 cm)in length, and weighing between 2.4 and 5.5 lb (1.1–2.5 kg)",
+        "picture": "../public/images/rabbit.jpg",
+        "facts": [
+            "A rabbit’s life span is about 8 years, though sterilized rabbits (those who are spayed/neutered) can live as long as 10-12 years",
+            "A baby rabbit is called a kit, a female is called a doe, and a male is a buck.  A group of rabbits is called a herd",
+            "Rabbits and hares are “lagomorphs”, an order that also includes the pika, a small burrowing mammal that looks like a large mouse and lives in colder climates",
+            "A rabbit’s teeth never stop growing!  Many people believe they need to chew to keep their teeth short.  While they do enjoy chewing, it’s the normal wear from where their top and bottom teeth meet that keeps a rabbit’s teeth short",
+            "A rabbit symbol is often used to show that a product was not tested on animals.  This is because rabbits have traditionally been used in product safety testing",
+            "Bunnies cannot vomit, so it is super important to feed them only healthy, fresh, appropriate food",
+            "Jackrabbits, which belong to the genus “Lepus,” have been clocked at speeds of 45 miles per hour"
+        ]
+    },
+    {
+        "id": 4,
+        "breed": "Panda",
+        "description": "Pandas have a bear like appearance. Their distinctive black and white colouring makes them one of the best-known species in the world. They can reach 6 ft (1.9 m) in height and in the wild weigh around 220–250 lb (110–115 kg)",
+        "picture": "../public/images/panda.jpg",
+        "facts": [
+            "Baby pandas are born pink and measure about 15cm – that’s about the size of a pencil! They are also born blind and only open their eyes six to eight weeks after birth",
+            "Giant pandas (often referred to as simply “pandas”) are black and white bears. In the wild, they are found in thick bamboo forests, high up in the mountains of central China",
+            "These guys are BIG eaters – every day they fill their tummies for up to 12 hours, shifting up to 12 kilograms of bamboo!",
+            "The giant panda’s scientific name is Ailuropoda melanoleuca, which means “black and white cat-foot”",
+            "Giant pandas grow to between 1.2m and 1.5m, and weigh between 75kg and 135kg. Scientists aren’t sure how long pandas live in the wild, but in captivity they live to be around 30 years old",
+            "Family time! Female pandas give birth to one or two cubs every two years. Cubs stay with their mothers for 18 months before venturing  off on their own!",
+            "Sadly, these beautiful bears are endangered, and it’s estimated that only around 1,000 remain in the wild. That’s why we need todo all we can to protect them!"
+        ]
+    },
+    {
+        "id": 5,
+        "breed": "Tiger",
+        "description": "  As the largest member of the cat family, tigers are strong, powerful and one of nature’s most feared predators. Their beautiful orange and black striped coats provide camouflage when hunting prey at night when they can reach speeds of 65 km/hr",
+        "picture": "../public/images/tiger.jpg",
+        "facts": [
+            "Sumatran Tigers have dark dense fur with narrower stripes than other species, giving them the perfect  camouflage to mimic light reflection on the forest floor",
+            "The existence of a large predator like the Sumatran Tiger is important for a healthy ecosystem with a rich variety of many different species. The island of Sumatrais the only location in the world that is home to tigers, rhinos, orangutans AND elephants!",
+            "Tigers can reach a length of up to 3.3 metres (11 feet) and weigh as much as 300 kilograms (660 pounds)",
+            "Many subspecies of the tiger are either endangered or already extinct. Humans are the primary cause of this through hunting and the destruction of habitats",
+            "Around half of tiger cubs don’t live beyond two years of age",
+            "Various tiger subspecies are the national animals of Bangladesh, India, North Korea, South Korea and Malaysia",
+            "Tigers that breed with lions give birth to hybrids known as tigons"
+        ]
+    },
+    {
+        "id": 8,
+        "breed": "sdasfgd",
+        "description": "tdgf",
+        "picture": "../public/images/mainrabbit.jpg",
+        "facts": [
+            "gdbf",
+            "dgtg",
+            "bb",
+            "gf",
+            "hghfgh",
+            "ytg",
+            "juygnh"
+        ]
+    },
+    {
+        "id": 9,
+        "breed": "hfdgh",
+        "description": "hfhg",
+        "picture": "../public/images/login-min.png",
+        "facts": [
+            "mer mer",
+            "mer mer",
+            "mer mer",
+            "mer mer",
+            "mer mer",
+            "mer mer",
+            "mer mer"
+        ]
+    },
+    {
+        "id": 10,
+        "breed": "sdddf",
+        "description": "gfdg",
+        "picture": "../public/images/photo_2017-10-02_11-59-46.jpg",
+        "facts": [
+            "sgfhg ",
+            "sfgh ",
+            "sfgh",
+            " sfgh ",
+            "sgfh ",
+            "s gh",
+            " sfgh"
+        ]
+    },
+    {
+        "id": 11,
+        "breed": "Doa",
+        "description": "dsa",
+        "picture": "../public/images/photo_2017-08-24_14-54-16.jpg",
+        "facts": [
+            "sad",
+            "asd",
+            "sda",
+            "dsa",
+            "dsa",
+            "sad",
+            "dsa"
+        ]
+    }
+]
