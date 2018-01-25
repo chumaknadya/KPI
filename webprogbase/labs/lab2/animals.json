@@ -1,0 +1,30 @@
+[
+    {
+        "id": 2,
+        "name": "Pomchuk",
+        "breed": "myppchuk",
+        "birth": "2017-09-23T10:54:21",
+        "lifetime": "100"
+    },
+    {
+        "id": 3,
+        "name": "Bonia",
+        "breed": "layka",
+        "birth": "2017-08-38T12:45:23",
+        "lifetime": 13
+    },
+    {
+        "id": 4,
+        "name": "Nadinka",
+        "breed": "tvarunka",
+        "birth": "2017-08-38T12:45:23",
+        "lifetime": 100
+    },
+    {
+        "id": 5,
+        "name": "Nada",
+        "breed": "testu",
+        "birth": "2016-08-09T23:23:23",
+        "lifetime": 23
+    }
+]

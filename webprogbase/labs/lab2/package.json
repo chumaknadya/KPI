@@ -1,0 +1,16 @@
+{
+  "name": "lab2",
+  "version": "1.0.0",
+  "description": "lab2",
+  "main": "animals.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "is-iso-date": "0.0.1",
+    "read": "^1.0.7",
+    "readline-sync": "^1.4.7"
+  }
+}
