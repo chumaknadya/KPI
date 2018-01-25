@@ -1,0 +1,15 @@
+{
+	"name": "Maria",
+	"surname": "Viope",
+	"year": 1952,
+	"GPA": 3.6,
+	"grandchildren": [{
+		"name": "Misha"
+	}, {
+		"name": "Katya"
+	}, {
+		"name": "Lona"
+	}, {
+		"name": "Anna"
+	}]
+}

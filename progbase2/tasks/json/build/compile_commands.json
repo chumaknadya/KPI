@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/ziom/progbase2/tasks/json/build",
+  "command": "/usr/bin/cc   -I/home/ziom/progbase2/tasks/json/include  -O3 -DNDEBUG   -o CMakeFiles/proj.dir/main.c.o   -c /home/ziom/progbase2/tasks/json/main.c",
+  "file": "/home/ziom/progbase2/tasks/json/main.c"
+}
+]
