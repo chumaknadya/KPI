@@ -1,0 +1,4 @@
+/home/ziom/progbase2/tasks/udp/build/CMakeFiles/rebuild_cache.dir
+/home/ziom/progbase2/tasks/udp/build/CMakeFiles/edit_cache.dir
+/home/ziom/progbase2/tasks/udp/build/CMakeFiles/client.dir
+/home/ziom/progbase2/tasks/udp/build/CMakeFiles/server.dir

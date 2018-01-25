@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/ziom/progbase2/tasks/udp/build",
+  "command": "/usr/bin/cc   -I/home/ziom/progbase2/tasks/udp/include  -g   -o CMakeFiles/client.dir/client.c.o   -c /home/ziom/progbase2/tasks/udp/client.c",
+  "file": "/home/ziom/progbase2/tasks/udp/client.c"
+},
+{
+  "directory": "/home/ziom/progbase2/tasks/udp/build",
+  "command": "/usr/bin/cc   -I/home/ziom/progbase2/tasks/udp/include  -g   -o CMakeFiles/server.dir/server.c.o   -c /home/ziom/progbase2/tasks/udp/server.c",
+  "file": "/home/ziom/progbase2/tasks/udp/server.c"
+}
+]

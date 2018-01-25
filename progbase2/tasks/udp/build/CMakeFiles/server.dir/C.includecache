@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ziom/progbase2/tasks/udp/server.c
+stdio.h
+-
+stdlib.h
+-
+progbase/net.h
+-
+progbase/list.h
+-
+string.h
+-
+ctype.h
+-
+

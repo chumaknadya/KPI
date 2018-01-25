@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/ziom/progbase2/tasks/tcp_client/build",
+  "command": "/usr/bin/cc   -I/home/ziom/progbase2/tasks/tcp_client/include  -std=c99 -Werror -Wall -g   -std=gnu99 -o CMakeFiles/server.dir/main.c.o   -c /home/ziom/progbase2/tasks/tcp_client/main.c",
+  "file": "/home/ziom/progbase2/tasks/tcp_client/main.c"
+},
+{
+  "directory": "/home/ziom/progbase2/tasks/tcp_client/build",
+  "command": "/usr/bin/cc   -I/home/ziom/progbase2/tasks/tcp_client/include  -std=c99 -Werror -Wall -g   -std=gnu99 -o CMakeFiles/server.dir/handlers.c.o   -c /home/ziom/progbase2/tasks/tcp_client/handlers.c",
+  "file": "/home/ziom/progbase2/tasks/tcp_client/handlers.c"
+},
+{
+  "directory": "/home/ziom/progbase2/tasks/tcp_client/build",
+  "command": "/usr/bin/cc   -I/home/ziom/progbase2/tasks/tcp_client/include  -std=c99 -Werror -Wall -g   -std=gnu99 -o CMakeFiles/server.dir/src/request.c.o   -c /home/ziom/progbase2/tasks/tcp_client/src/request.c",
+  "file": "/home/ziom/progbase2/tasks/tcp_client/src/request.c"
+}
+]

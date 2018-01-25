@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ziom/progbase2/tasks/tcp_client/client.c
+stdlib.h
+-
+stdio.h
+-
+errno.h
+-
+progbase.h
+-
+progbase/net.h
+-
+progbase/console.h
+-
+
