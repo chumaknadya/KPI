@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CreateAnimal</title>
+  <meta name="description" content="creation">
+  <link type="text/css"  href="../public/stylesheets/style.css"  rel="stylesheet"/>
+</head>
+<body>
+  <div class="header">
+    <h1>Create animal</h1>
+  </div>
+  <div class="creation">
+   
+    <form action="/animals/form" method="POST"  enctype="multipart/form-data" >
+      <fieldset>
+        <div>
+            <label for="breed">Breed:</label>
+            <input type="text" id="breed" name="breed" value="<%= animals.breed%>"required>
+        </div>
+        <div>
+           <label for="description">Description:</label>
+           <textarea  id="description" name="description" value="<%=animals.description%>" required></textarea>
+        </div>
+        <div>
+          <label for="facts"> 7 Facts:</label>
+          <input type="text" id="text"  name="fact1" value="<%=animals.facts%>" required></input>
+          <input type="text" id="text"  name="fact2" value="<%=animals.facts%>" required></input>
+          <input type="text" id="text"  name="fact3" value="<%=animals.facts%>"required></input>
+          <input type="text" id="text"  name="fact4" value="<%=animals.facts%>" required></input>
+          <input type="text" id="text"  name="fact5" value="<%=animals.facts%>" required></input>
+          <input type="text" id="text"  name="fact6" value="<%=animals.facts%>" required></input>
+          <input type="text" id="text"  name="fact7" value="<%=animals.facts%>" required></input>
+        </div>
+        <div>
+          <label for="picture">Picture:</label>
+          <input type="file"class="upload"  id ="picture" name="picture" value="<%=animals.picture%>" required>
+        </div>
+         <input type="submit" value="OK" />
+      </fieldset> 
+    </form>
+  </div>
+
+</body>
+</html>
